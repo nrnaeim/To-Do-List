@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-image: linear-gradient(
+    to left,
+    rgb(101, 211, 236),
+    rgba(110, 255, 144, 0.803)
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  height: 500px;
+  width: 500px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 30px white inset;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+  background-color: #dcdcdcbe;
+}
+.content {
+  width: 100%;
+  overflow: scroll;
+}
+
+#entry {
+  width: 80%;
+  height: 40px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  padding-left: 10px;
+}
+#add {
+  margin-left: 4%;
+  width: 15%;
+  height: 40px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+#list {
+  margin-top: 20px;
+  list-style: none;
+}
+#list li {
+  margin-top: 20px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgba(248, 247, 247, 0.361);
+  padding: 10px;
+  border-radius: 5px;
+}
+#list li p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+input[type="radio"] {
+  height: 20px;
+  width: 20px;
+}
+.edit-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.delete {
+  height: 35px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  font-size: 15px;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  background-color: rgb(255, 89, 89);
+}
